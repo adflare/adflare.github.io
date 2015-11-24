@@ -62,11 +62,20 @@ $brand-secondary: #19eb99;
     width: 100%;
     height: 100%;
     div {
-        display: inline;
+        display: inline-block;
         height: 100%
     }
 }
+.complex {
+    background-color: #3B3538;
+    div .cl-3 {
+        background-color: #3B3538;
+    }
+}
+.section {
+    display: block;
 
+}
 .br-p {
     border-right: thin solid $brand-primary;
 }
@@ -87,6 +96,7 @@ $brand-secondary: #19eb99;
 }
 .tc {
     text-align: center;
+   /*margin: auto;*/
 }
 * {
   box-sizing: border-box;
@@ -176,4 +186,19 @@ h2 {
 }
 p {
   font-size: 2vmin;
+}
+.btn-main {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $brand-primary;
+    padding: 10px;
+    font-size: x-large;
+    border: 2px solid $brand-primary;
+}
+.btn-main:hover {
+    border: 2px solid $brand-secondary;
+    color: $brand-secondary;
+}
+.xc {
+    @include centerer(true, false);
 }

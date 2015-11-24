@@ -134,46 +134,58 @@
   height: 100%; }
   /* line 64, C:/Users/stas/Desktop/adflare/css/app.scss */
   .wrapper div {
-    display: inline;
+    display: inline-block;
     height: 100%; }
 
-/* line 70, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 69, C:/Users/stas/Desktop/adflare/css/app.scss */
+.complex {
+  background-color: #3B3538; }
+  /* line 71, C:/Users/stas/Desktop/adflare/css/app.scss */
+  .complex div .cl-3 {
+    background-color: #3B3538; }
+
+/* line 75, C:/Users/stas/Desktop/adflare/css/app.scss */
+.section {
+  display: block; }
+
+/* line 79, C:/Users/stas/Desktop/adflare/css/app.scss */
 .br-p {
   border-right: thin solid #aa943c; }
 
-/* line 73, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 82, C:/Users/stas/Desktop/adflare/css/app.scss */
 .br-s {
   border-right: thin solid #19eb99; }
 
-/* line 76, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 85, C:/Users/stas/Desktop/adflare/css/app.scss */
 .bl-p {
   border-left: thin solid #aa943c; }
 
-/* line 79, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 88, C:/Users/stas/Desktop/adflare/css/app.scss */
 .bl-s {
   border-left: thin solid #19eb99; }
 
-/* line 82, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 91, C:/Users/stas/Desktop/adflare/css/app.scss */
 [data-x="bp"] {
   color: #aa943c; }
 
-/* line 85, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 94, C:/Users/stas/Desktop/adflare/css/app.scss */
 [data-x="bs"] {
   color: #19eb99; }
 
-/* line 88, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 97, C:/Users/stas/Desktop/adflare/css/app.scss */
 .tc {
-  text-align: center; }
+  text-align: center;
+  /*margin: auto;*/ }
 
-/* line 91, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 101, C:/Users/stas/Desktop/adflare/css/app.scss */
 * {
   box-sizing: border-box; }
 
-/* line 94, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 104, C:/Users/stas/Desktop/adflare/css/app.scss */
 html {
   height: 100%; }
 
-/* line 97, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 107, C:/Users/stas/Desktop/adflare/css/app.scss */
 body {
   /*position: absolute;*/
   height: 100% !important;
@@ -186,7 +198,7 @@ body {
   font-family: 'helvetica';
   font-size: 1vw; }
 
-/* line 106, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 116, C:/Users/stas/Desktop/adflare/css/app.scss */
 .logo {
   left: 0;
   top: 0;
@@ -194,7 +206,7 @@ body {
   height: auto;
   display: inline; }
 
-/* line 113, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 123, C:/Users/stas/Desktop/adflare/css/app.scss */
 .fpg {
   background: url("/img/mbg.png");
   background-size: contain;
@@ -204,7 +216,7 @@ body {
   height: 100%;
   background-color: #242323; }
 
-/* line 122, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 132, C:/Users/stas/Desktop/adflare/css/app.scss */
 .gs {
   position: absolute;
   left: 50%;
@@ -212,61 +224,81 @@ body {
   color: #aa943c;
   text-align: center;
   bottom: 0; }
-  /* line 127, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 137, C:/Users/stas/Desktop/adflare/css/app.scss */
   .gs a {
     text-decoration: none;
     font-size: xx-large;
     color: #19eb99;
     line-height: 0; }
-  /* line 133, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 143, C:/Users/stas/Desktop/adflare/css/app.scss */
   .gs a:hover {
     color: #19eb99; }
 
-/* line 137, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 147, C:/Users/stas/Desktop/adflare/css/app.scss */
 nav {
   position: fixed;
   height: 10%;
   width: 100%; }
-  /* line 141, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 151, C:/Users/stas/Desktop/adflare/css/app.scss */
   nav .dvd {
     font-size: x-large;
     color: #aa943c;
     padding-right: 1em; }
-  /* line 146, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 156, C:/Users/stas/Desktop/adflare/css/app.scss */
   nav .rt {
     float: right;
     margin-top: 1em; }
-  /* line 150, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 160, C:/Users/stas/Desktop/adflare/css/app.scss */
   nav ul {
     display: inline;
     list-style-type: none;
     margin: 0;
     padding-left: 0;
     padding-right: 0; }
-    /* line 156, C:/Users/stas/Desktop/adflare/css/app.scss */
+    /* line 166, C:/Users/stas/Desktop/adflare/css/app.scss */
     nav ul li {
       display: inline;
       padding-right: 1em; }
-      /* line 159, C:/Users/stas/Desktop/adflare/css/app.scss */
+      /* line 169, C:/Users/stas/Desktop/adflare/css/app.scss */
       nav ul li a {
         text-decoration: none;
         text-transform: uppercase;
         color: #aa943c;
         font-size: x-large; }
-      /* line 165, C:/Users/stas/Desktop/adflare/css/app.scss */
+      /* line 175, C:/Users/stas/Desktop/adflare/css/app.scss */
       nav ul li a:hover {
         color: #19eb99; }
 
-/* line 171, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 181, C:/Users/stas/Desktop/adflare/css/app.scss */
 h1 {
   font-size: 2.0vw; }
 
-/* line 174, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 184, C:/Users/stas/Desktop/adflare/css/app.scss */
 h2 {
   font-size: 3.0vh; }
 
-/* line 177, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 187, C:/Users/stas/Desktop/adflare/css/app.scss */
 p {
   font-size: 2vmin; }
+
+/* line 190, C:/Users/stas/Desktop/adflare/css/app.scss */
+.btn-main {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #aa943c;
+  padding: 10px;
+  font-size: x-large;
+  border: 2px solid #aa943c; }
+
+/* line 198, C:/Users/stas/Desktop/adflare/css/app.scss */
+.btn-main:hover {
+  border: 2px solid #19eb99;
+  color: #19eb99; }
+
+/* line 202, C:/Users/stas/Desktop/adflare/css/app.scss */
+.xc {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
 
 /*# sourceMappingURL=app.css.map */
