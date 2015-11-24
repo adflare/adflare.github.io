@@ -44,21 +44,29 @@ $brand-secondary: #19eb99;
     float: left;
     padding: 1em;
     width: 100%;
-    min-height: 1px;
+    height: 100%;
 }
 @for $i from 1 through 12 {
 
     .cl-#{$i} {
         width: 100% / 12 * $i;
+        height: 100%;
+        img {
+           max-width: 100%;
+           height: auto;
+        }
     }
 
 }
 .wrapper {
     width: 100%;
+    height: 100%;
     div {
         display: inline;
+        height: 100%
     }
 }
+
 .br-p {
     border-right: thin solid $brand-primary;
 }
