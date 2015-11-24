@@ -1,0 +1,170 @@
+@import url("hover-min.css");
+$brand-bg: #242323;
+$brand-primary: #aa943c;
+$brand-secondary: #19eb99;
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+@font-face {
+    font-family: 'helvetica';
+    src: url('/fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('/fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('/fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('/fonts/helveticaneuecyr-light-webfont.ttf') format('truetype'),
+         url('/fonts/helveticaneuecyr-light-webfont.svg#helveticaneuecyrlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'helvetica';
+    src: url('/fonts/helveticaneuecyr-bold-webfont.eot');
+    src: url('/fonts/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
+         url('/fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
+         url('/fonts/helveticaneuecyr-bold-webfont.ttf') format('truetype'),
+         url('/fonts/helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+[class*='cl-'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+}
+@for $i from 1 through 12 {
+
+    .cl-#{$i} {
+        width: 100% / 12 * $i;
+    }
+
+}
+.wrapper {
+    width: 100%;
+    div {
+        display: inline;
+    }
+}
+.br-p {
+    border-right: thin solid $brand-primary;
+}
+.br-s {
+    border-right: thin solid $brand-secondary;
+}
+.bl-p {
+    border-left: thin solid $brand-primary;
+}
+.bl-s {
+    border-left: thin solid $brand-secondary;
+}
+[data-x="bp"] {
+    color: $brand-primary;
+}
+[data-x="bs"] {
+    color: $brand-secondary;
+}
+.tc {
+    text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    /*position: absolute;*/
+    height: 100% !important;
+    width: 100% !important;
+    top:0; bottom:0; right:0; left:0;
+    margin: 0;
+    font-family: 'helvetica';
+    font-size: 1vw;
+}
+.logo {
+    left: 0;
+    top: 0;
+    max-width: 128px;
+    height: auto;
+    display: inline;
+}
+.fpg {
+    background: url('/img/mbg.png');
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: $brand-bg;
+}
+.gs {
+        @include centerer(true, false);
+        color: $brand-primary;
+        text-align: center;
+        bottom: 0;
+        a {
+            text-decoration: none;
+            font-size: xx-large;
+            color: $brand-secondary;
+            line-height: 0;
+        }
+        a:hover {
+            color: $brand-secondary;
+        }
+}
+nav {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    .dvd {
+        font-size: x-large;
+        color: $brand-primary;
+        padding-right: 1em;
+    }
+    .rt {
+        float: right;
+        margin-top: 1em;
+    }
+    ul {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        li {
+            display: inline;
+            padding-right: 1em;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $brand-primary;
+                font-size: x-large;
+            }
+            a:hover {
+                color: $brand-secondary;
+            }
+        }
+    }
+}
+h1 {
+  font-size: 2.0vw;
+}
+h2 {
+  font-size: 3.0vh;
+}
+p {
+  font-size: 2vmin;
+}
