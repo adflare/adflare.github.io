@@ -139,6 +139,7 @@ body {
     height: 25%;
     bottom: 0;
     background: rgba(black,0.3);
+    font-size: 1.0vmax;
     h3 {
         padding-top: 0;
         margin-top: 0;
@@ -150,6 +151,14 @@ body {
     ul {
         list-style-type: square;
         color: $brand-primary;
+    }
+}
+.eicon {
+    img {
+        height: auto;
+        max-width: 24px;
+        padding: 0;
+        margin: 0;
     }
 }
 .gs {
@@ -208,10 +217,13 @@ h1 {
   font-size: 2.0vw;
 }
 h2 {
-  font-size: 3.0vh;
+  font-size: 2.0vw;
+}
+h3 {
+    font-size: 1.5vmax;
 }
 p {
-  font-size: 2vmin;
+  font-size: 1.0vmax;
 }
 .btn-main {
     text-decoration: none;

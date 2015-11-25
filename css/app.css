@@ -226,21 +226,29 @@ body {
   width: 100%;
   height: 25%;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3); }
-  /* line 142, C:/Users/stas/Desktop/adflare/css/app.scss */
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 1.0vmax; }
+  /* line 143, C:/Users/stas/Desktop/adflare/css/app.scss */
   .xwrapper h3 {
     padding-top: 0;
     margin-top: 0;
     text-transform: uppercase; }
-  /* line 147, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 148, C:/Users/stas/Desktop/adflare/css/app.scss */
   .xwrapper .bx {
     border-right: 1px solid #aa943c; }
-  /* line 150, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 151, C:/Users/stas/Desktop/adflare/css/app.scss */
   .xwrapper ul {
     list-style-type: square;
     color: #aa943c; }
 
-/* line 155, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 157, C:/Users/stas/Desktop/adflare/css/app.scss */
+.eicon img {
+  height: auto;
+  max-width: 24px;
+  padding: 0;
+  margin: 0; }
+
+/* line 164, C:/Users/stas/Desktop/adflare/css/app.scss */
 .gs {
   position: absolute;
   left: 50%;
@@ -248,17 +256,17 @@ body {
   color: #aa943c;
   text-align: center;
   bottom: 0; }
-  /* line 160, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 169, C:/Users/stas/Desktop/adflare/css/app.scss */
   .gs a {
     text-decoration: none;
     font-size: xx-large;
     color: #19eb99;
     line-height: 0; }
-  /* line 166, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 175, C:/Users/stas/Desktop/adflare/css/app.scss */
   .gs a:hover {
     color: #19eb99; }
 
-/* line 170, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 179, C:/Users/stas/Desktop/adflare/css/app.scss */
 nav {
   position: absolute;
   left: 0;
@@ -266,49 +274,53 @@ nav {
   z-index: 10000;
   height: 10%;
   width: 100%; }
-  /* line 177, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 186, C:/Users/stas/Desktop/adflare/css/app.scss */
   nav .dvd {
     font-size: x-large;
     color: #aa943c;
     padding-right: 1em; }
-  /* line 182, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 191, C:/Users/stas/Desktop/adflare/css/app.scss */
   nav .rt {
     float: right;
     margin-top: 1em; }
-  /* line 186, C:/Users/stas/Desktop/adflare/css/app.scss */
+  /* line 195, C:/Users/stas/Desktop/adflare/css/app.scss */
   nav ul {
     display: inline;
     list-style-type: none;
     margin: 0;
     padding-left: 0;
     padding-right: 0; }
-    /* line 192, C:/Users/stas/Desktop/adflare/css/app.scss */
+    /* line 201, C:/Users/stas/Desktop/adflare/css/app.scss */
     nav ul li {
       display: inline;
       padding-right: 1em; }
-      /* line 195, C:/Users/stas/Desktop/adflare/css/app.scss */
+      /* line 204, C:/Users/stas/Desktop/adflare/css/app.scss */
       nav ul li a {
         text-decoration: none;
         text-transform: uppercase;
         color: #aa943c;
         font-size: x-large; }
-      /* line 201, C:/Users/stas/Desktop/adflare/css/app.scss */
+      /* line 210, C:/Users/stas/Desktop/adflare/css/app.scss */
       nav ul li a:hover {
         color: #19eb99; }
 
-/* line 207, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 216, C:/Users/stas/Desktop/adflare/css/app.scss */
 h1 {
   font-size: 2.0vw; }
 
-/* line 210, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 219, C:/Users/stas/Desktop/adflare/css/app.scss */
 h2 {
-  font-size: 3.0vh; }
+  font-size: 2.0vw; }
 
-/* line 213, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 222, C:/Users/stas/Desktop/adflare/css/app.scss */
+h3 {
+  font-size: 1.5vmax; }
+
+/* line 225, C:/Users/stas/Desktop/adflare/css/app.scss */
 p {
-  font-size: 2vmin; }
+  font-size: 1.0vmax; }
 
-/* line 216, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 228, C:/Users/stas/Desktop/adflare/css/app.scss */
 .btn-main {
   text-decoration: none;
   text-transform: uppercase;
@@ -317,12 +329,12 @@ p {
   font-size: x-large;
   border: 2px solid #aa943c; }
 
-/* line 224, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 236, C:/Users/stas/Desktop/adflare/css/app.scss */
 .btn-main:hover {
   border: 2px solid #19eb99;
   color: #19eb99; }
 
-/* line 228, C:/Users/stas/Desktop/adflare/css/app.scss */
+/* line 240, C:/Users/stas/Desktop/adflare/css/app.scss */
 .xc {
   position: absolute;
   left: 50%;
