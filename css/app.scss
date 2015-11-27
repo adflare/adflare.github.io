@@ -3,6 +3,9 @@
 $brand-bg: #242323;
 $brand-primary: #aa943c;
 $brand-secondary: #19eb99;
+$spc: #7261D1;
+$gray-light: #a0b3b0;
+
 @mixin centerer($horizontal: true, $vertical: true) {
   position: absolute;
   @if ($horizontal and $vertical) {
@@ -16,6 +19,11 @@ $brand-secondary: #19eb99;
     top: 50%;
     transform: translate(0, -50%);
   }
+}
+@mixin tint($img, $color) {
+    background: linear-gradient($color, $color), url($img);
+    background-size: cover, cover;
+    background-repeat: no-repeat;
 }
 @font-face {
     font-family: 'helvetica';
@@ -57,6 +65,9 @@ $brand-secondary: #19eb99;
            height: auto;
         }
     }
+
+}
+#chatra.chatra--visible {
 
 }
 .wrapper {
@@ -112,7 +123,7 @@ body {
     top:0; bottom:0; right:0; left:0;
     margin: 0;
     font-family: 'helvetica';
-    font-size: 1vw;
+    font-size: 1.0vmax;
 }
 .logo {
     left: 0;
@@ -141,6 +152,9 @@ body {
     bottom: 0;
     background: rgba(black,0.3);
     font-size: 1.0vmax;
+    .cl-3 {
+        height: 100%;
+    }
     h3 {
         padding-top: 0;
         margin-top: 0;
@@ -148,6 +162,7 @@ body {
     }
     .bx {
         border-right: 1px solid $brand-primary;
+        height: 100%;
     }
     ul {
         list-style-type: square;
@@ -173,6 +188,9 @@ body {
         a:hover {
             color: $brand-secondary;
         }
+}
+.tr {
+    text-align: right;
 }
 nav {
     position: absolute;
@@ -237,4 +255,132 @@ p {
 }
 .xc {
     @include centerer(true, false);
+}
+/*   LANDINGS    */
+hr.lr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(white, 0), rgba(white, 0.75), rgba(white, 0));
+}
+.l-r-header {
+    background: linear-gradient(rgba($spc,0.94), rgba($spc,0.94)), url("/img/online-advert.png");
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    height: 63%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    .spt{font-size: 1.6vmax;}
+    .l-r-logo {
+        /*@include centerer(true, false);*/
+        max-width: 72px;
+        height: auto;
+    }
+}
+.l-r-block {
+    width: 100%;
+    height: 40%;
+}
+.l-r-hblock {
+    @include tint("/img/complex.png", rgba($spc,0.94));
+    width: 100%;
+    height: 35%;
+    color: white;
+}
+.l-r-footer {
+    width: 100%;
+    height: 5%;
+    .l-r-logo-s {
+        display: inline;
+        max-height: 28px;
+        width: auto;
+    }
+    .lr-logolink {
+        text-decoration: none;
+        color: $spc;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .lr-finfo {
+        float: right;
+        color: rgba($spc,0.9);
+        vertical-align: middle;
+        line-height: 5%;
+    }
+}
+.lr-form {
+    height: 50%;
+    width: 100%;
+    font-size: 1.0vmax;
+    text-align: left;
+    white-space: nowrap;
+    .lr-form-cl {
+        p {
+            font-size: 1.2vmax;
+        }
+        display: inline-table;
+        margin: 0;
+        width: 50%;
+        height: 99%;
+        border-right: 1px;
+        border-left: 0; border-bottom: 0; border-top: 0;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, rgba(white, 0), rgba(white, 0.75), rgba(white, 0)) 1 100%;
+    }
+    .lr-form-cr {
+        display: inline-table;
+        margin: 0;
+        width: 50%;
+        height: 99%;
+        clear: both;
+        p {
+            font-size: 1.2vmax;
+        }
+        lr-gl {
+            text-align: center;
+        }
+        img {
+            display: inline;
+            max-width: 15%;
+            height: auto;
+            margin-left: 4%;
+            margin-right: 4%;
+            overflow: hidden;
+        }
+    }
+}
+.lr-order {
+    width: 100%;
+    clear: both;
+    p {
+        margin: 0;
+    }
+    input {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 1em;
+        padding: 5px 10px;
+        display:block;
+        background-image: none;
+        background: none;
+        border: 1px solid white;
+        color: white;
+    }
+    .lr-btn-form {
+        float: right;
+        text-decoration: none;
+        color: $brand-secondary;
+        border: 1px solid $brand-secondary;
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 1em;
+    }
+    .lr-btn-form:hover {
+        color: white;
+    }
+}
+.hvr-bounce-to-bottom:before {
+    background: $brand-secondary;
+    color: white;
 }
